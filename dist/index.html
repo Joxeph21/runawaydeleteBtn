@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete button</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-stone-950 grid grid-cols-[auto,1fr] px-2 py-4 w-full h-screen"
+  >
+    <aside class="w-80 fixed p-4 text-stone-300 bg-[#171717]">
+      <div class="grid gap-1">
+        <input
+          class="my-2 focus:outline-none px-4 rounded-sm placeholder:text-neutral-600 text-stone-50 bg-[#2f2f2f] py-2"
+          type="text"
+          placeholder="Search..."
+        />
+        <ul class="text-sm grid gap-6">
+          <li class="bg-neutral-800 cursor-pointer p-2 rounded-sm">
+            Account Settings
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Privacy and Security
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Notification Preferences
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Appearance and Theme
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Language and Localization
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Accessibility Options
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Content and Data Management
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Integration and External Services
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Subscription and Billing
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Support and Help
+          </li>
+          <li class="cursor-pointer hover:bg-neutral-800 p-2 rounded-sm">
+            Custom Preferences
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main
+      class="h-max ml-80 w-[900px] float-right text-stone-50 p-6 bg-[#212121] rounded-sm"
+    >
+      <section class="h-full flex flex-col gap-4 w-full p-4">
+        <h1 class="text-gray-50 font-semibold text-left text-xl">My Account</h1>
+        <div class="w-full mb-4 h-[500px] bg-[#0d0d0d] px-4 py-4">
+          <div class="w-full flex items-center bg-[#111] py-6 px-8">
+            <img
+              class="rounded-full w-24 h-24 mx-5"
+              src="../assets//profile.jpg"
+              alt="profile_pic"
+            />
+            <div class="w-full">
+              <h2 class="font-bold text-2xl mb-2">Joe</h2>
+              <span class="tag text-xs py-1 px-2 rounded-md bg-blue-700/50">
+                React Developer</span
+              >
+              <span class="tag text-xs py-1 rounded-md px-2 bg-green-700"
+                >Frontend Engineer</span
+              >
+            </div>
+            <button
+              class="w-48 rounded-md bg-indigo-700 text-xs cursor-pointer py-3"
+            >
+              Edit User Profile
+            </button>
+          </div>
+          <div class="flex flex-col bg-[#212121] gap-1 w-full h-max py-4 px-5">
+            <div
+              class="w-full h-14 mb-2 py-1 px-4 flex justify-between items-center"
+            >
+              <div class="space-y-1">
+                <h4 class="font-semibold text-sm text-slate-200 uppercase">
+                  Display name
+                </h4>
+                <p class="capitalize text-sm text-gray-50/80">joe</p>
+              </div>
+              <button
+                class="py-3 rounded-md text-xs px-8 bg-neutral-900 cursor-pointer"
+              >
+                Edit
+              </button>
+            </div>
+            <div
+              class="w-full h-14 py-1 px-4 flex justify-between items-center"
+            >
+              <div class="space-y-1">
+                <h4 class="font-semibold text-sm text-slate-200 uppercase">
+                  username
+                </h4>
+                <p class="text-sm text-gray-50/80">.botnamedjoe</p>
+              </div>
+              <button
+                class="py-3 rounded-md text-xs px-8 bg-neutral-900 cursor-pointer"
+              >
+                Edit
+              </button>
+            </div>
+            <div
+              class="w-full h-14 py-1 px-4 flex justify-between items-center"
+            >
+              <div class="space-y-1">
+                <h4 class="font-semibold text-sm text-slate-200 uppercase">
+                  email
+                </h4>
+                <p class="text-sm text-gray-50/80">***********@gmail.com</p>
+              </div>
+              <button
+                class="py-3 rounded-md text-xs px-8 bg-neutral-900 cursor-pointer"
+              >
+                Edit
+              </button>
+            </div>
+            <div
+              class="w-full h-14 py-1 px-4 flex justify-between items-center"
+            >
+              <div class="space-y-1">
+                <h4 class="font-semibold text-sm text-slate-200 uppercase">
+                  Phone Number
+                </h4>
+                <p class="text-sm text-gray-50/80">********9765</p>
+              </div>
+              <button
+                class="py-3 rounded-md text-xs px-8 bg-neutral-900 cursor-pointer"
+              >
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6 mt-4">
+          <div class="space-y-6">
+            <h2 class="text-xl font-semibold">Password and Authentication</h2>
+            <button class="px-4 py-2 text-xs bg-indigo-700 rounded-sm">
+              Change Password
+            </button>
+          </div>
+
+          <div class="w-1/2 space-y-4">
+            <h4 class="text-sm uppercase font-bold text-slate-200">
+              AuthenticaTOR APP
+            </h4>
+            <p class="text-xs text-slate-200/80">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus perferendis natus velit tenetur hic ratione, aperiam
+              dicta vel omnis libero.
+            </p>
+            <button
+              class="px-4 py-2 capitalize text-xs bg-indigo-700 rounded-sm"
+            >
+              Enable Authenticator app
+            </button>
+          </div>
+
+          <div class="w-1/2 space-y-4">
+            <h4 class="text-sm uppercase font-bold text-slate-200">
+              security keys
+            </h4>
+            <p class="text-xs text-slate-200/80">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reprehenderit, odio.
+            </p>
+            <button class="px-4 py-2 text-xs bg-indigo-700 rounded-sm">
+              Register a security key
+            </button>
+          </div>
+          <div class="w-1/2 space-y-4">
+            <h4 class="text-sm uppercase font-bold text-slate-200">
+              Account Removal
+            </h4>
+            <p class="text-xs text-slate-200/80">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              molestiae voluptatibus praesentium?
+            </p>
+            <button id="deleteBtn"  class="px-4 py-2 rounded-sm bg-red-700 capitalize text-xs">
+              Delete Account
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div
+      class="z-100 fixed flex items-center justify-center w-full h-full inset-0 bg-neutral-900/50 backdrop:blur-md"
+    >
+<div class="w-1/2 p-2 bg-neutral-800">
+<h4>Are you sure you want to delete your account?</h4>
+<div>
+    <button>No</button>
+    <button>Yes</button>
+</div>
+</div>
+</div> -->
+  </body>
+  <script src="../src/ap.js"></script>
+</html>
